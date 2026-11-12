@@ -1,0 +1,88 @@
+{
+  "judul": "Pemilahan sampah rumah tangga",
+  "batas": "Aturan berasal dari Permen LHK No. 14 Tahun 2021 dan PP No. 81 Tahun 2012 (hukum Indonesia, untuk sampah rumah tangga). Hasilnya saran awal pemilahan, bukan keputusan akhir. Ketentuan teknis dan fasilitas dapat berbeda di tiap daerah atau bank sampah, dan benda campuran sebaiknya ditanyakan ke pengelola setempat.",
+  "sumber": {
+    "S1": "Peraturan Menteri Lingkungan Hidup dan Kehutanan Nomor 14 Tahun 2021 tentang Pengelolaan Sampah pada Bank Sampah, Kementerian LHK RI, https://jdih.kemenkoinfra.go.id/cfind/source/files/permen-lhk/2021pmlhk014.pdf, diakses 12 Nov 2026",
+    "S2": "Peraturan Pemerintah Nomor 81 Tahun 2012 tentang Pengelolaan Sampah Rumah Tangga dan Sampah Sejenis Sampah Rumah Tangga, Pemerintah RI, https://peraturan.go.id/files/pp81-2012bt.pdf, diakses 12 Nov 2026"
+  },
+  "aturan": [
+    {
+      "id": "R1",
+      "jika": [
+        "sampah berupa sisa makanan, kulit buah, atau sisa sayur",
+        "sampah berupa daun, rumput, atau serasah"
+      ],
+      "mode": "atau",
+      "maka": "sampah mudah terurai",
+      "sumber": "S1, S2",
+      "rujukan": "S1 Pasal 6 ayat (3); S2 Pasal 17 ayat (2) huruf b"
+    },
+    {
+      "id": "R2",
+      "jika": [
+        "sampah berupa plastik, kertas, atau kardus",
+        "sampah berupa logam, kaleng, atau kaca"
+      ],
+      "mode": "atau",
+      "maka": "sampah dapat didaur ulang",
+      "sumber": "S1, S2",
+      "rujukan": "S1 Pasal 6 ayat (5); S2 Pasal 17 ayat (2) huruf d"
+    },
+    {
+      "id": "R3",
+      "jika": [
+        "sampah dapat didaur ulang",
+        "material dalam keadaan bersih dan utuh"
+      ],
+      "mode": "dan",
+      "maka": "layak disetor ke bank sampah",
+      "sumber": "S1",
+      "rujukan": "S1 Lampiran III huruf g (penabung didorong menyetor sampah bersih dan utuh)",
+      "catatan": "Sumber menganjurkan sampah bersih dan utuh karena bernilai lebih tinggi. Penulis menjadikannya syarat 'layak disetor'."
+    },
+    {
+      "id": "R4",
+      "jika": [
+        "sampah berupa baterai, aki, lampu, atau remote bekas",
+        "sampah berupa barang elektronik yang tidak terpakai lagi"
+      ],
+      "mode": "atau",
+      "maka": "produk rumah tangga mengandung B3 yang tidak terpakai lagi",
+      "sumber": "S1",
+      "rujukan": "S1 Pasal 6 ayat (2) huruf a dan c; Lampiran I huruf a.1"
+    },
+    {
+      "id": "R5",
+      "jika": [
+        "produk rumah tangga mengandung B3 yang tidak terpakai lagi",
+        "sampah berupa kemasan bekas pembunuh serangga atau produk kimia rumah tangga"
+      ],
+      "mode": "atau",
+      "maka": "sampah B3",
+      "sumber": "S1, S2",
+      "rujukan": "S1 Pasal 6 ayat (2) huruf a dan b; S2 Pasal 17 ayat (2) huruf a"
+    },
+    {
+      "id": "R6",
+      "jika": [
+        "sampah berupa popok, pembalut, atau tisu bekas pakai",
+        "sampah berupa kemasan multilapis (misalnya sachet)"
+      ],
+      "mode": "atau",
+      "maka": "sampah lainnya (residu)",
+      "sumber": "S1, S2",
+      "rujukan": "S1 Pasal 6 ayat (6); S2 Pasal 17 ayat (2) huruf e",
+      "catatan": "Sumber hanya mendefinisikan 'sampah lainnya' sebagai sampah yang tidak masuk jenis lain. Contoh bendanya adalah penerapan penulis."
+    },
+    {
+      "id": "R7",
+      "jika": [
+        "sampah mudah terurai"
+      ],
+      "mode": "atau",
+      "maka": "layak dikomposkan",
+      "sumber": "S1",
+      "rujukan": "S1 Pasal 9 ayat (1) dan (2); Lampiran I huruf c.1 (pengomposan untuk sampah organik)"
+    }
+  ]
+}
